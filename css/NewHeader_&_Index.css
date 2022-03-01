@@ -36,6 +36,10 @@ img{
     justify-content: center;
 }
 
+.width-25px{
+    width: 25px;
+}
+
 .align-center{
     align-items: center;
 }
@@ -118,6 +122,13 @@ img{
 	z-index: -1;
 }
 
+.banner__container{
+    display: block;
+    max-width: 65vw;
+    margin: 0 auto;
+}
+
+
 
 // .banner__background img{
 // 	width:100vw;
@@ -138,7 +149,7 @@ img{
 
 
 .padding-top-11vw{
-    padding-top: 150px;
+    padding-top: 17vh;
 }
 
 .ban__btn{
