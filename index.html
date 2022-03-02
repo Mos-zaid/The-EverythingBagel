@@ -75,22 +75,25 @@
         <div class="header__logo p-absolute-logo">
             <a href="index.html"><img src="images/everythingbagel_logo.png" title="Everything Bagel" class="u-max-full-width"></a>
         </div>
+
+        <!-- Mobile Menu -->
+        <!-- NOW I USE THE ONE THE PREVIOUS DEVELOPER USED check script on line 192 -->
+        <!-- <div class="mobile-menu-button-container">
+            <div class="hamburger-script">
+                <img src="images/Icon/Hamburger.png" class="hamburger-style" title="Mobile Menu">
+            </div>
+        </div>         -->
         
         <!-- Main Menu -->
-        <div class="header-main container">
-            <nav>
-                <ul class="nav-menu d-flex flex-gap-col-var jc-flex-center">
+        <div class="header-main container p-absolute-nav-links">
+            <nav class="padding-bot-20px">
+                <ul class="nav-menu d-flex flex-gap-col-var jc-flex-center mobile-menu">
                     <li><a href="takeout.html" title="Everything Bagel Take-Out">TAKEOUT MENU</a></li>
                     <li><a href="catering.html" title="Everything Bagel Catering">CATERING MENU</a></li>
                     <li><a href="gallery.html" title="Everything Bagel Gallery">GALLERY</a></li>
                     <li><a href="contact.html" title="Contact Everything Bagel">CONTACT</a></li>
                 </ul>
             </nav>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div class="mobile-menu-button-container">
-            <img src="images/Icon/icon-hamburger.svg" class="hamburger-style hamburger-script" title="Mobile Menu">
         </div>
 
 
@@ -171,10 +174,10 @@
                 </div>
                 <div class="footer-4th-col">
                     <h4 class="footer-title">NAVIGATION</h4>
-                    <p><a href="#">HOME</a></p>
-                    <p><a href="#">MENUS</a></p>
-                    <p><a href="#">GALLERY</a></p>
-                    <p><a href="#">CONTACT</a></p>
+                    <p><a href="index.html">HOME</a></p>
+                    <p><a href="takeout.html">MENUS</a></p>
+                    <p><a href="gallery.html">GALLERY</a></p>
+                    <p><a href="contact.html">CONTACT</a></p>
                 </div>
 
             </div>
@@ -185,6 +188,18 @@
 
         </div>
     </footer>
+
+    <script src="scripts/meanmenu/jquery.meanmenu.js"></script>
+    <script src="js/newHeader_&_index.js"></script>
+
+    <!-- start meanmenu load -->
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('header nav').meanmenu();
+        });
+    </script>
+    <!-- end meanmenu load -->
+    
 
 </body>
 

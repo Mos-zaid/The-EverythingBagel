@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link href="css/everythingbagel.css" rel="stylesheet" type="text/css">
+  <link href="css/NewHeader_&_Index.css" rel="stylesheet" type="text/css" />
+
   
   <!-- meanmenu and lightbox -->
   <link rel="stylesheet" href="scripts/meanmenu/meanmenu.css" media="all">
@@ -59,85 +61,48 @@
 
 
 
-<div class="section color-header">
-<p>&nbsp;</p>
-</div>
-
-
-
-<div class="section preheader">
-<div class="container">
-	<div class="row">
-        <div class="twelve columns">
-        	<p class="preheader-text">
-            <a href="tel:631-462-6433" title="Call Us!">631.462.6433</a> 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.facebook.com/The-Everything-Bagel-of-Commack-160847154023029/" target="_blank" title="Like Us on Facebook"><img src="images/everythingbagel_facebook_icon.png" width="15px"></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://www.instagram.com/commackbagels/" target="_blank" title="Connect with Us on LinkedIn"><img src="images/everythingbagel_instagram_icon.png" width="15px"></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <!--<a href="https://www.orderstart.com/everythingbagel" target="_blank" title="Order Now">Order Now</a></p>-->
+  <header>    
+    <!-- Colored Header -->
+    <div class="header--colored">
+        <div class="container d-flex p-relative jc-flex-end align-center flex-gap-col-8rem">
+            <div class="header__phone">
+                <a href="tel:631-462-6433" title="Call Us!">631.462.6433</a>
+            </div>
+            <div class="header__social d-flex flex-gap-col-1rem">
+                <a href="https://www.facebook.com/The-Everything-Bagel-of-Commack-160847154023029/" target="_blank" title="Like Us on Facebook"><img src="images/Icon/facebook.png" class="width-25px"></a>
+                <a href="https://www.instagram.com/commackbagels/" target="_blank" title="Connect with Us on LinkedIn"><img src="images/Icon/instagram.png" class="width-25px"></a>
+            </div>
         </div>
     </div>
-</div>
-</div>
- 
+    
+    <!-- Logo -->
+    <div class="header__logo p-absolute-logo">
+        <a href="index.html"><img src="images/everythingbagel_logo.png" title="Everything Bagel" class="u-max-full-width"></a>
+    </div>
 
-
- 
- 
-  
-<!--start of header-->
-<div class="section header">
-<div class="container">    
-
-<div class="row">
-    <div class="four columns logo">
-      <a href="index.html"><img src="images/everythingbagel_logo.png" title="Everything Bagel" class="u-max-full-width"></a>
+    <!-- Mobile Menu -->
+    <!-- NOW I USE THE ONE THE PREVIOUS DEVELOPER USED check script on line 235 -->
+    <!-- <div class="mobile-menu-button-container">
+        <div class="hamburger-script">
+            <img src="images/Icon/Hamburger.png" class="hamburger-style" title="Mobile Menu">
+        </div>
+    </div>         -->
+    
+    <!-- Main Menu -->
+    <div class="header-main container p-absolute-nav-links">
+        <nav class="padding-bot-20px">
+            <ul class="nav-menu d-flex flex-gap-col-var jc-flex-center mobile-menu">
+                <li><a href="takeout.html" title="Everything Bagel Take-Out">TAKEOUT MENU</a></li>
+                <li><a href="catering.html" title="Everything Bagel Catering">CATERING MENU</a></li>
+                <li><a href="gallery.html" title="Everything Bagel Gallery">GALLERY</a></li>
+                <li><a href="contact.html" title="Contact Everything Bagel">CONTACT</a></li>
+            </ul>
+        </nav>
     </div>
 
 
-    <div class="eight columns navigation">
-	  
-		<div class="row">
-            <div class="dropdown">
-            <p class="dropbtn"><a href="takeout.html" title="Everything Bagel Take-Out">TAKEOUT MENU</a></p>
-            </div>
-            
-            <div class="dropdown">
-            <p class="dropbtn"><a href="catering.html" title="Everything Bagel Catering">CATERING MENU</a></p>
-            </div>
-            
-            <div class="dropdown">
-            <p class="dropbtn"><a href="gallery.html" title="Everything Bagel Gallery">GALLERY</a></p>
-            </div>
 
-            <div class="dropdown">
-            <p class="dropbtn"><a href="contact.html" title="Contact Everything Bagel">CONTACT</a></p>
-            </div>
-
-        </div>
-      </div>
-
-  <!-- start mobile navigation -->
-        	<div class="column nav">
-            <header>
-              <nav>
-               <ul>
-				 <li><a href="takeout.html" title="Everything Bagel Take-Out">TAKE-OUT</a></li>
-				 <li><a href="catering.html" title="Everything Bagel Catering">CATERING</a></li>
-                 <li><a href="gallery.html" title="Everything Bagel Gallery">GALLERY</a></li>
-                 <li><a href="contact.html" title="Contact Everyting Bagel">CONTACT</a></li>
-               </ul>
-              </nav>
-             </header> 
-            </div>
- 
-  <!-- end mobile navigation -->
-
-</div>
-</div>
-	</div>
+</header>
 
 <!--end of header-->
 	
@@ -160,7 +125,7 @@
        <div class="row">
        	<div class="twelve columns text-center">
 		   <p class="title-black">CONTACT US</p>
-           <img src="images/everythingbagel_home_welcome_dots.png" title="Everything Bagel" class="u-max-full-width">
+           <img src="images/everythingbagel_home_welcome_dots.png" title="Everything Bagel" class="welcome__dots">
         </div>
        </div>
    
@@ -220,42 +185,56 @@
 
   
 <!--start of footer-->
-<div class="section footer">
-<div class="container">
+<footer class="footer--colored footer-white p-relative">
+  <div class="container">
 
-      <div class="row">
-    	<div class="five columns footer-col">
-          <p class="footer-title">ABOUT</p>
-          <p class="footer-white">Everything Bagel is known for amazing bagels, appetizing sandwiches, varieties of cream cheese, choice meats, and great catering services.</p>
-        </div>
-        
-        <div class="two columns footer-col">
-          <p class="footer-title">NAVIGATION</p>
-		  <p class="footer-white"><a href="takeout.html" title="Everything Bagel Take-Out">TAKE-OUT</a></p>
-		  <p class="footer-white"><a href="catering.html" title="Everything Bagel Catering">CATERING</a></p>
-		  <p class="footer-white"><a href="gallery.html" title="Our Gallery">GALLERY</a></p>
-          <p class="footer-white"><a href="contact.html" title="Contact Us">CONTACT</a></p>
-        </div>
-       
-     </div>
-    
-    <div class="row">
-    	<div class="twelve columns">
-			<hr>
-          <p class="frasca">&copy; 2022 Everything Bagel. All rights reserved. Website designed &amp; developed by <a href="http://frascadesigngroup.com" title="FraSca Design Group" target="_blank">FraSca Design Group</a></p>
+      <div class="p-absolute-footer footer__logo">
+          <img src="images/everythingbagel_logo.png" title="Everything Bagel" class="u-max-full-width">
+      </div>
+      <div class="d-flex-xl flex-gap-col-4rem">
+          <div class="footer-1st-col">
+              <h4 class="footer-title">ABOUT</h4>
+              <p>Everything Bagel is known for amazing bagels, appetizing sandwiches, varieties of cream cheese, choice meats, and great catering services.</p>
+
+              <p> Let us cater your next family or business event </p>
           </div>
+          <div class="footer-2nd-col">
+              <h4 class="footer-title">HOURS</h4>
+              <b> mon-fri: </b> 
+              <p>5am-3pm</p>
+              <b>sat-sun:</b> 
+              <p>5am-3pm</p> 
+          </div>
+          <div class="footer-3rd-col">
+              <h4 class="footer-title">CONTACT US</h4>
+              <a class="footer__phone" href="tel:631-462-6433" title="Call Us!">631.462.6433</a>       
+              <a class="footer__phone" href="tel:631-462-3129" title="Call Us!">631.462.3129</a>
+          </div>
+          <div class="footer-4th-col">
+              <h4 class="footer-title">NAVIGATION</h4>
+              <p><a href="index.html">HOME</a></p>
+              <p><a href="takeout.html">MENUS</a></p>
+              <p><a href="gallery.html">GALLERY</a></p>
+              <p><a href="contact.html">CONTACT</a></p>
+          </div>
+
       </div>
 
-      
-    
-</div>
-</div>   
-  
+      <hr class="footer__hr">
+
+      <p class="txt-al-center frasca">© 2022 Everything Bagel. All rights reserved. Website designed & developed by <a target="_blank" href="http://frascadesigngroup.com/">FraSca Design Group</a></p>
+
+  </div>
+</footer>
+
+
 
   
     
   
 <script src="scripts/meanmenu/jquery.meanmenu.js"></script>
+<script src="js/newHeader_&_index.js"></script>
+
 
 
 

@@ -4,7 +4,7 @@ img{
 
 .header--colored{
     background-color: #f16d23;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 }
 
 .header--colored a{
@@ -65,18 +65,42 @@ img{
     position: relative;
 }
 
+.mgn-top-20px{
+    margin-top: 20px;;
+}
+
 .mgn-top-40px{
     margin-top: 40px;;
 }
 
 .header__logo img{
-    width: 200px;
+    width: 140px;
     display: block;
     margin: 10px auto;
 }
 
-.nav-menu{
+.mobile-menu{
     display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    gap: 25px 0;
+    margin: 0 auto;
+    // background-color: #FBFBFB;
+    padding: 20px;
+    // border-radius: 20px;
+}
+
+.mobile-menu--is-active{
+    display: flex;
+}
+
+.p-absolute-nav-links{
+    position: fixed;
+    top: 35vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav-menu > li{
@@ -100,16 +124,18 @@ img{
 .mobile-menu-button-container{
     background-color: #464646;
     width: 100vw;
-    max-height: 50px;
+    min-height: 50px;
     display: flex;
     justify-content: flex-end;
 }
 
 .hamburger-style{
-    padding: 20px;
-    width: 30px;
+    padding: 12px 20px 0px 20px;
+    width: 28px;
     font-size: 300px;
+    height: 25px;
 }
+
 
 .banner__background{
 	background-image:url(../images/cropped-everything-bagel-2.png);
@@ -118,7 +144,7 @@ img{
     // object-fit: cover;
     background-position: center center;
 	width:100%;
-    height: 50vh;
+    height: 65vh;
 	z-index: -1;
 }
 
@@ -149,7 +175,7 @@ img{
 
 
 .padding-top-7vh{
-    padding-top: 7vh;
+    padding-top: 25vh;
 }
 
 .ban__btn{
@@ -184,7 +210,7 @@ img{
 .welcome__dots{
     width: 315px;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto 10px auto;
 }
 
 .welcome__flag{
@@ -213,6 +239,10 @@ img{
 
 .mgn-y-15{
     margin: 15px 0;
+}
+
+.mrg-btm-5px{
+    margin-bottom: 5px;
 }
 
 /* FOOTER */
@@ -301,10 +331,29 @@ img{
         align-content: center;
         justify-content: center;
     }
+
+    .padding-top-7vh{
+        padding-top: 7vh;
+    }
+
+    .padding-bot-20px{
+        padding-bottom: 20px;
+    }
+    
     
     .mobile-menu-button-container{
         display: none;
     }
+
+    .mobile-menu{
+        width: 100%;
+        background-color: #fff;
+    }
+    
+
+    .p-absolute-nav-links{
+        position: inherit;
+    }    
 
     .p-absolute-logo{
         position: absolute;
@@ -316,12 +365,17 @@ img{
         gap: 0px 6.5rem; /* row-gap column gap */
     }
 
+    .header--colored{
+        padding: 1.5rem 0;
+    }    
+
     .header__logo img{
         width: 130px!important;
     }
     
     .nav-menu{
         display: flex;
+        flex-direction: row;
         padding-top: 50px;
     }
     
@@ -334,6 +388,7 @@ img{
     }
 
     .banner__background{
+        background-image:url(../images/Banner.jpg);
         height: 75vh;
     }
 
